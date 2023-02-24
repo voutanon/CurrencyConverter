@@ -1,0 +1,30 @@
+.vm--container {
+  .vm--modal {
+    overflow: scroll !important;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    width: 100% !important;
+    height: max-content !important;
+    max-width: max-content;
+    min-width: min-content;
+    padding: 20px 10px 60px;
+    left: 0 !important;
+    right: 0 !important;
+    margin: 0 auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .modal {
+      &__closeButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        font-size: 15px;
+        border-radius: 4px;
+      }
+    }
+  }
+}

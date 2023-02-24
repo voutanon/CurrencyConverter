@@ -1,0 +1,43 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  outline: none;
+  border: 0px solid transparent;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: right;
+}
+select {
+  outline: none;
+  border: 0px solid transparent;
+  background: transparent;
+  option {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+label {
+  width: 100%;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+}
+button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: $primary;
+  color: white;
+  border: 0px solid transparent;
+  font-size: 16px;
+  font-weight: 500;
+  max-width: 300px;
+  width: max-content;
+  transition: all 0.5s;
+  &[disabled] {
+    transition: all 0.5s;
+    background: $darkGray;
+  }
+}
